@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GMC Payment Schedule</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.2/jspdf.plugin.autotable.min.js"></script>
+<style>
+  @media print {
+    body {
+      background-color: #fff !important;
+      font-size: 10pt;
+    }
+    .dashboard-container {
+      max-width: 100% !important;
+      box-shadow: none !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+    [data-no-print] {
+      display: none !important;
+    }
+    .print\:hidden {
+      display: none !important;
+    }
+    table, th, td {
+      border-color: #ddd !important;
+    }
+    .bg-gray-700 {
+      background-color: #374151 !important;
+      color: #fff !important;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .bg-blue-100, .bg-yellow-300, .even\:bg-gray-50, .bg-gray-50, .bg-gray-200, .stats-card, .print\:bg-gray-100 {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .print\:bg-gray-100 { background-color: #f3f4f6 !important; }
+    .text-red-600 { color: #dc2626 !important; }
+    .print-header { display: block !important; }
+    .print\:block { display: block !important; }
+    .print\:grid { display: grid !important; }
+    .print\:break-inside-avoid { break-inside: avoid !important; }
+    @page {
+      size: A4;
+      margin: 15mm;
+    }
+  }
+</style>
+</head>
+<body class="bg-gray-100">
+  <div id="root"></div>
+</body>
+</html>

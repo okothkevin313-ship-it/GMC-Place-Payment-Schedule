@@ -1,0 +1,5 @@
+{
+  "name": "GMC Payment Schedule",
+  "description": "A web application that displays a detailed payment schedule, breaking down unpresented cheques, payments for approval, weekly requisitions, and overall financial balances in a clear, easy-to-read format.",
+  "requestFramePermissions": []
+}
